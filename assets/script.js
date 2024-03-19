@@ -44,7 +44,6 @@ function setOperation(operation){
 }
 
 //getting our calculation results
-
 function calculate(){
     //Retr input expressions
     let expression = document.getElementById('num1').value ;
@@ -62,6 +61,7 @@ function calculate(){
     document.getElementById('results').innerText = 'Error= ' + error.message; 
   }
 }
+
 
    // Function to animate typing effect
     function typeWriter(text, element, speed) {
