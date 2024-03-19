@@ -54,17 +54,13 @@ function calculate(){
         //check if results are valid
         if (isNaN(results) || !isFinite(results) ) {
             //throw an error for invalid input
-            throw new Error('Msee wacha jaba')
+            throw new Error('Invalid input')
         }
-        //display results
-        document.getElementById('results').innerText = 'Ans=' + results;
-    } 
-    catch (error) {
-        //display our error message
-        document.getElementById('results').innerText = 'Yoh' + ' Msee wacha jaba';
-    }
-    
-    
+        document.getElementById('results').innerText = 'Ans= ' + results; 
+  } catch (error) {
+    // Displays error message
+    document.getElementById('results').innerText = 'Error= ' + error.message; 
+  }
 }
 
    // Function to animate typing effect
