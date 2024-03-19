@@ -61,7 +61,7 @@ function calculate(){
     } 
     catch (error) {
         //display our error message
-        document.getElementById('results').innerText = 'Yoh' + ' Msee wacha jaba';
+        document.getElementById('results').innerText = 'error' + ' error.message';
     }
     
     
