@@ -1,0 +1,129 @@
+
+/* Body styling */
+
+body{
+    /* flex container*/
+    display: flex;
+    /* horrizontal center arrangement*/
+    justify-content: center;
+    /*vertical center arrangement */
+    align-items: center;
+    /* height of the body*/
+    height: 100vh;
+    /* Remove default margin*/
+    margin: 0;
+    /* Font for text*/
+    font-family: Arial, sans-serif;
+
+}
+
+/* calc container styling*/
+
+.calculator{
+    /* background color*/
+    background-color: #f2f2f2;
+    /* cont corner styling*/
+    border-radius: 10px;
+    /* added shadows*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* padding inside the calc*/
+    padding: 20px;
+
+}
+/* input field styling*/
+.input{
+    /* Width*/
+    width: calc(100% - 40px);
+    /* add padding*/
+    padding: 10px;
+    /* adds margin at the bottom*/
+    margin-bottom: 10px;
+    /* font size*/
+    font-size: 20px;
+    /* remove the border*/
+    border: none;
+    /* border radius*/
+    border-radius: 5px;
+    /*align our text */
+    text-align: right;
+}
+
+/* cont button styling*/
+.buttons{
+    /* button display*/
+    display: grid;
+    /* add colums on our grid*/
+    grid-template-columns: repeat(4, 1fr);
+    /* added a gap btw*/
+    gap: 10px;
+}
+/* styling for all buttons*/
+button{
+    /* add padding inside the buttons*/
+    padding: 15px;
+    /* Remove button border*/
+    border: none;
+    /*round the coner */
+    border-radius: 5px;
+    /* set background*/
+    background-color: grey;
+    /* font*/
+    font-size: 20px;
+    /* changed the cursor*/
+    cursor: pointer;
+}
+
+/* styling our operator buttons*/
+.operators{
+    /* background set*/
+    background-color: green;
+    /*text color */
+    color: white;
+}
+
+/* zero button style*/
+.zero{
+    /* span the zero*/
+    grid-column: span 2;
+}
+/* result but styling*/
+.results{
+    /* added margin at the top*/
+    margin-top: 10px;
+    /* font size*/
+    font-size: 24px;
+    /* text alligment*/
+    text-align: right;
+}
+/* effects for button*/
+button:hover {
+    /* background*/
+    background-color: red;
+}
+
+/* */
+
+
+/* */
+
+/* */
+
+
+/* */
+
+/* */
+
+
+/* */
+
+
+/* */
+
+
+/* */
+
+
+/* */
+
+
+/* */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 6 Mini calc</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!--Container for the calc  -->
+    <div class="calculator">
+
+        <!-- input field for the numbers -->
+        <input type="text" id="num1" class="input" placeholder="Enter First number">
+
+        <!--  container for buttons-->
+        <div class="buttons">
+
+            <!-- operators buttons onclick -->
+            
+            <button class="operators" onclick="setOperation('+')">+</button>
+
+            <button class="operators" onclick="setOperation('-')">-</button>
+
+            <button class="operators" onclick="setOperation('*')">*</button>
+
+            <button class="operators" onclick="setOperation('/')">/</button>
+
+
+             <!-- other buttons -->
+            <button  onclick="clearInput()">C</button>
+
+            <button  onclick="backspace()"> Del</button>
+
+             <!-- Numeric Buttons -->
+
+             <button onclick="appendToInput('7')">7</button>
+             <button onclick="appendToInput('8')">8</button>
+             <button onclick="appendToInput('9')">9</button>
+             <button onclick="appendToInput('4')">4</button>
+             <button onclick="appendToInput('5')">5</button>
+             <button onclick="appendToInput('6')">6</button>
+             <button onclick="appendToInput('1')">1</button>
+             <button onclick="appendToInput('2')">2</button>
+             <button onclick="appendToInput('3')">3</button>
+
+
+             
+             <button class="zero" onclick="appendToInput('0')">0</button>
+
+             <button onclick="appendToInput('.')">.</button>
+
+             <button onclick="calculate()">=</button>
+
+            </div>
+
+            <!--Results display  -->
+
+            <div id="results" class="results"></div>
+
+        </div>
+        
+        <!--External Js-->
+        <script src="assets/script.js"></script>
+
+
+</body>
+</html>
