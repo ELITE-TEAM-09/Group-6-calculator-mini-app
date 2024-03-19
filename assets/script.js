@@ -66,3 +66,46 @@ function calculate(){
     
     
 }
+
+   // Function to animate typing effect
+    function typeWriter(text, element, speed) {
+        let i = 0;
+        const interval = setInterval(() => {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+            } else {
+                clearInterval(interval);
+            }
+        }, speed);
+    }
+
+    // Text to be typed
+    const welcomeMessage = "Hey, stranger! Welcome to Calc Buddy";
+
+    // Function to start typing animation
+    function startTypingAnimation() {
+        typeWriter(welcomeMessage, document.getElementById("animatedPlaceholder"), 100);
+    }
+
+    // Start typing animation initially
+    startTypingAnimation();
+
+    // Reset placeholder after user input
+    document.getElementById("num1").addEventListener("input", function() {
+        document.getElementById("animatedPlaceholder").textContent = "";
+        document.getElementById("num1").placeholder = "Enter First number";
+    });
+
+    // Function to play the pop sound
+function playPopSound() {
+    const popSound = document.getElementById('popSound');
+    popSound.currentTime = 0; // Reset the sound to the beginning in case it's already playing
+    popSound.play();
+  }
+  
+  // Add event listeners to all buttons 
+  document.querySelectorAll('button').forEach(button => {
+    button.addEventListener('click', playPopSound);
+  });
+  
